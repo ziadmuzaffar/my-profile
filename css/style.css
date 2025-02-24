@@ -1,0 +1,355 @@
+/************ Scroll ************/
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--secondry);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--third);
+}
+
+/************ Root ************/
+:root {
+    --primary: #183986;
+    --secondry: #007dbc;
+    --third: #f4e316;
+}
+
+/************ Fonts ************/
+@font-face {
+    font-family: 'Cairo';
+    src: url('../fonts/Cairo-Bold.ttf');
+}
+
+/************ Globals ************/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Cairo';
+    overflow-x: hidden;
+    direction: rtl;
+}
+
+button {
+    background-color: none;
+    border: none;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/************ Bootstrap ************/
+.row>div {
+    align-items: stretch !important;
+    margin-bottom: 25px;
+}
+
+/************ Nav Bar ************/
+.navbar {
+    padding: 5px 0;
+    background-color: #fff;
+    box-shadow: 0 0 5px var(--secondry);
+}
+
+.navbar .navbar-brand img {
+    width: 40px;
+}
+
+.navbar .navbar-brand i {
+    font-size: 25px;
+    color: var(--primary);
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    color: var(--secondry);
+    font-size: 17px;
+}
+
+.navbar .navbar-nav .nav-item a.active,
+.navbar .navbar-nav .nav-item a:hover {
+    color: var(--primary);
+}
+
+/************ Landing ************/
+.landing {
+    background-color: var(--primary);
+    min-height: calc(100vh - 52px);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.landing h2 {
+    color: #fff;
+    line-height: 1.8;
+}
+
+.landing h1 {
+    font-size: 70px;
+    color: var(--secondry);
+    line-height: 1.2;
+    margin: 20px 0;
+    opacity: 1;
+}
+
+.landing .container>a {
+    margin-top: 30px;
+    background-color: var(--secondry);
+    color: #fff;
+    display: inline-block;
+    padding: 10px 40px;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+.landing .container div {
+    margin-top: 30px;
+}
+
+.landing .container div a {
+    color: #fff;
+    font-size: 40px;
+    display: inline-block;
+    margin: 0 10px;
+    transition: transform .3s ease-in-out;
+}
+
+.landing .container div a:hover {
+    transform: scale(1.1);
+}
+
+/************ Section ************/
+section {
+    padding: 50px 0 25px;
+}
+
+section:nth-child(even) {
+    background-color: var(--primary);
+}
+
+section>h2 {
+    font-size: 25px;
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+section>p {
+    margin-bottom: 30px;
+    font-size: 17px;
+    color: var(--secondry);
+}
+
+section>h2,
+section>p {
+    text-align: center;
+}
+
+section:nth-child(even)>h2 {
+    color: #fff;
+}
+
+/************ Card ************/
+.zs-card {
+    background-color: #eee;
+    border-radius: 5px;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: transform .3s ease-in-out;
+}
+
+.zs-card:hover {
+    transform: translateY(-10px);
+}
+
+.zs-card i {
+    font-size: 70px;
+    color: var(--secondry);
+}
+
+.zs-card img {
+    width: 150px;
+}
+
+.zs-card h3 {
+    font-size: 22px;
+    color: var(--primary);
+    margin: 15px 0 10px;
+}
+
+.zs-card p {
+    font-size: 17px;
+    color: var(--secondry);
+    line-height: 1.8;
+    margin: 0;
+    text-align: center;
+}
+
+/************ Work ************/
+.works .work {
+    overflow: hidden;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: transform .3s ease-in-out;
+    box-shadow: 0 0 5px var(--secondry);
+}
+
+.works .work:hover {
+    transform: translateY(-10px);
+}
+
+.works .work img {
+    width: 100%;
+    padding: 3px;
+    border-radius: 5px 5px 0 0;
+}
+
+.works .work div {
+    padding: 3px 5px;
+    direction: ltr;
+}
+
+.works .work h3 {
+    color: var(--primary);
+    font-size: 20px;
+    margin: 0;
+}
+
+.works .work p {
+    color: var(--secondry);
+    font-size: 17px;
+    margin: 5px 0 10px;
+}
+
+.works .work a {
+    background-color: var(--primary);
+    color: #fff;
+    display: block;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.works .works-more {
+    display: block;
+    width: fit-content;
+    margin: auto;
+    background-color: var(--secondry);
+    color: #fff;
+    font-size: 17px;
+    padding: 10px 40px;
+    border-radius: 5px;
+    transition: scale .3s;
+}
+
+.works .works-more:hover {
+    scale: 1.1;
+}
+
+/************ Footer ************/
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--secondry);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 30px;
+    color: #fff;
+    line-height: 40px;
+    cursor: pointer;
+    transition: scale .3s linear;
+    display: none;
+}
+
+.scroll-to-top:hover {
+    scale: 1.1;
+}
+
+/************ Card ************/
+.contact-us .zs-card:hover {
+    transform: translateY(-10px) scale(1.1);
+}
+
+/************ Footer ************/
+footer {
+    padding: 10px 0;
+    background-color: var(--primary);
+}
+
+footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+@media (max-width: 768px) {
+    footer .container {
+        flex-direction: column;
+    }
+}
+
+footer p {
+    margin: 0;
+    font-size: 17px;
+}
+
+@media (max-width: 768px) {
+    footer p {
+        margin-bottom: 10px;
+    }
+}
+
+footer a {
+    font-size: 25px;
+}
+
+footer p,
+footer a {
+    color: #fff;
+}
+
+/************ Title Sections ************/
+.title-sections {
+    background-color: var(--primary);
+    padding: 25px 0;
+    text-align: center;
+}
+
+.title-sections h1 {
+    color: #fff;
+}
+
+.title-sections p {
+    font-size: 20px;
+    color: var(--secondry);
+    margin-top: 20px;
+}
