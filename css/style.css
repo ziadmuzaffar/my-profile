@@ -201,6 +201,10 @@ section:nth-child(even)>h2 {
 }
 
 /************ Skills ************/
+.skills {
+    padding: 50px 0;
+}
+
 .skills .container {
     display: flex;
     align-items: center;
@@ -211,12 +215,16 @@ section:nth-child(even)>h2 {
 .skills i {
     font-size: 70px;
     color: var(--secondry);
-    margin: 20px 0;
 }
 
 .skills img {
     width: 150px;
-    margin: 20px 0;
+}
+
+.skills i,
+.skills img {
+    display: inline-block;
+    margin: 10px;
 }
 
 /************ Card ************/
