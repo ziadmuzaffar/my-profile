@@ -1,4 +1,4 @@
-$(function () {
+$(document).ready(function () {
     /*************************************************************/
     $('.navbar .navbar-nav .nav-item .nav-link').click(function () {
         $('.navbar-collapse').removeClass('show')
