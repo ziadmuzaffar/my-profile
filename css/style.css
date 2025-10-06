@@ -163,6 +163,7 @@ a {
     height: 350px;
     padding: 5px;
     position: relative;
+    margin: auto;
 }
 
 .landing-avatar::before {
